@@ -1,0 +1,12 @@
+## Ignore root repo temporary files, build results, and libraries
+
+# Visual Studio cache & temporaries
+.vs/
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Vektoria Lib
+[Ll]ib*
