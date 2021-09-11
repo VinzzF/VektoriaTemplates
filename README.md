@@ -9,5 +9,5 @@ Projektvorlagen für die didaktische Game Engine "Vektoria" https://games.hs-kem
 5. Ggf. auf eigene Compiler und Windows SDK Versionen ausrichten. Projektmappe -> Rechtsklick -> Neu ausrichten
 6. Entwickeln oder Builden :)
 
-**DLL Knack Module**
+# DLL Knack Module
 Während des Debuggens wird der interne Bibliothekspfad auf das Modul im Projektordner gesetzt, damit dieses direkt von dort entwickelt werden kann und Kopiervorgänge bei jedem Build vermieden werden. Beim Publishen müssen alle Header- und Bibliotheksdateien des DLL Knack Moduls in den Lib Ordner (neben "Vektoria") kopiert werden!
