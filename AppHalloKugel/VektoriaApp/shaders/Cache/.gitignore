@@ -1,0 +1,6 @@
+# Do not ignore shader cache, as Vektoria seems unable to re-build those when they're missing
+# Not ideal, would prefer to switch that out in the future
+
+![Dd]ebug/
+![Rr]elease/
+!*.obj
