@@ -9,5 +9,12 @@ Projektvorlagen für die didaktische Game Engine "Vektoria" https://games.hs-kem
 5. Ggf. auf eigene Compiler und Windows SDK Versionen ausrichten. Projektmappe -> Rechtsklick -> Neu ausrichten
 6. Entwickeln oder Builden :)
 
+# Projekteinstellungen (Property Sheets)
+Die Einbindung der Vektoria-Bibliotheken (Includes, Libs, Environment, ...) erfolgt vollständig über externe Property Sheets, die im Hauptverzeichnis unter "Props" sowie den Projektverzeichnissen zu finden sind. Damit können Projekteinstellungen frei von der Gefahr die Abhängigkeiten zu verändern geändert werden, so lange bei allen Einstellungen die Vererbung von Einstellungen aktiviert ist.
+
+![property_inheritance](https://user-images.githubusercontent.com/73252260/132992247-8f68cd3a-599b-4486-8146-68a326c4668a.png)
+
+Zudem können Vektoria-relevante Einstellungen separat von Projekteinstellungen verwaltet werden. Auch kann der Hauptordner "Lib" beliebig verschoben werden, es bedarf nur einer Änderung der "PROJEKT/Props/Vektoria.LibDir.props" Datei, um den Pfad zu dieser anzupassen! Das Debug-Environment über die temporäre ".vcxproj.user" Datei (die nicht versioniert werden sollte) zu setzen, ist auch nicht mehr nötig.
+
 # DLL Knack Module
 Während des Debuggens wird der interne Bibliothekspfad auf das Modul im Projektordner gesetzt, damit dieses direkt von dort entwickelt werden kann und Kopiervorgänge bei jedem Build vermieden werden. Beim Publishen müssen alle Header- und Bibliotheksdateien des DLL Knack Moduls in den Lib Ordner (neben "Vektoria") kopiert werden!
