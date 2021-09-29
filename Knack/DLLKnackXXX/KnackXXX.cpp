@@ -209,11 +209,10 @@ namespace Vektoria
 
 	void CKnackXXX::SetLogFileData(FILE * pfile, unsigned int uStartTime, char * acFile)
 	{
-		// Setzen des Logfiles (geht iwie trotzdem nicht)
+		// Setzen des Logfiles
+		ULInit(acFile);
 		ULSetLogFilePtr(pfile);
 		ULSetLogTime(uStartTime);
-		ULSetLogFilePath(acFile);
-		//ULOn();	// crashes
 
 		ULInfo("Knack XXX Log Initialized");
 	}
