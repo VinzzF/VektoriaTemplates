@@ -24,12 +24,18 @@
     <ClInclude Include="targetver.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Game.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="VektoriaApp.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>

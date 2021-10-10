@@ -1,4 +1,4 @@
-﻿#include "stdafx.h"
+﻿#include "pch.h"
 #include "KnackXXX.h"
 #include "XXXDefines.h"
 
