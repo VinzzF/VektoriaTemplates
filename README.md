@@ -3,11 +3,12 @@ Projektvorlagen für die didaktische Game Engine "Vektoria" https://games.hs-kem
 
 # Setup eigener Projekte
 1. Den Ordner mit der gewünschten Projektvorlage in eigene Ordnerstruktur kopieren / integrieren
-2. *Nur* den "**Lib**" Ordner aus dem Vektoria Download (http://games.hs-kempten.de/vektoria-download/) (Version 20) in das Hauptverzeichnis kopieren (wo die "ADD VEKTORIA LIB FOLDER IN THIS DIR" Datei liegt)
-3. Ggf. Ordner / Dateien umbennen
-4. Gewünschte Solution (z.B. "Knack/Knack.sln") öffnen
-5. Ggf. auf eigene Compiler und Windows SDK Versionen ausrichten. Projektmappe -> Rechtsklick -> Neu ausrichten
-6. Entwickeln oder Builden :)
+2. Mindestens den "Props" Ordner, sowie die ".gitignore" Datei im Hauptverzeichnis kopieren / integrieren
+3. *Nur* den "**Lib**" Ordner aus dem Vektoria Download (http://games.hs-kempten.de/vektoria-download/) (Version 20) in das Hauptverzeichnis kopieren (wo die "ADD VEKTORIA LIB FOLDER IN THIS DIR" Datei liegt)
+4. Ggf. Ordner / Dateien umbennen
+5. Gewünschte Solution (z.B. "AppHalloKugel/VektoriaApp.sln") öffnen
+6. Ggf. auf eigene Compiler und Windows SDK Versionen ausrichten. Projektmappe -> Rechtsklick -> Neu ausrichten
+7. Entwickeln oder Builden :)
 
 # Prä-kompilierte Header
 Um mehrfache Inkludierung von Bibliotheks-Headern (z.B. windows.h, iostream, string, vector, ...) zu vermeiden, verwenden alle Projektvorlagen sogenannte "Pre-compiled header" (PCH auch "stdafx"). Das beschleunigt auch die Kompilierzeit der Projekte erheblich, gerade wenn diese größer werden. Solltet ihr bestimmte Header häufig in euren .cpp Dateien inkludieren, inkludiert diese stattdessen einmal in der "pch.h" Datei bei den anderen Biblioitheks-Includes.
