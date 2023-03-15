@@ -10,6 +10,10 @@ Projektvorlagen für die didaktische Game Engine "Vektoria" https://games.hs-kem
 6. Ggf. auf eigene Compiler und Windows SDK Versionen ausrichten. Projektmappe -> Rechtsklick -> Neu ausrichten
 7. Entwickeln oder Builden :)
 
+# Versionen
+Die Templates sind für die Vektoria Version 20 (Stand März 2020) vorgesehen. Kompatibilität mit späteren Versionen ist möglicherweise vorhanden, kann aber nicht garantiert werden. Für ältere Versionen, gibt es möglicherweise Tags / Releases!  
+Für die Vektoria Version 22 (Stand März 2022) ist das Haupttemplate ("AppV22") verfügbar. Da es größere Änderungen an der Struktur gab, sind die anderen Templates womöglich nicht kompatibel.
+
 # Prä-kompilierte Header
 Um mehrfache Inkludierung von Bibliotheks-Headern (z.B. windows.h, iostream, string, vector, ...) zu vermeiden, verwenden alle Projektvorlagen sogenannte "Pre-compiled header" (PCH auch "stdafx"). Das beschleunigt auch die Kompilierzeit der Projekte erheblich, gerade wenn diese größer werden. Solltet ihr bestimmte Header häufig in euren .cpp Dateien inkludieren, inkludiert diese stattdessen einmal in der "pch.h" Datei bei den anderen Biblioitheks-Includes.
 
